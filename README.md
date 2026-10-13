@@ -1,6 +1,6 @@
 <!-- Header -->
 <p align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:0f2027,50:203a43,100:2c5364&height=200&section=header&text=Onur%20Baydaş&fontSize=56&fontColor=ffffff&fontAlignY=36&desc=Sistem%20%26%20Altyap%C4%B1%20M%C3%BChendisi&descAlignY=58&descSize=18&animation=fadeIn" alt="Onur Baydaş" width="100%" />
+  <img src="assets/header.svg" alt="Onur Baydaş" width="100%" />
 </p>
 
 <p align="center">
@@ -11,7 +11,7 @@
 
 <p align="center">
   <a href="https://onurbaydas.online"><img src="https://img.shields.io/badge/Blog-onurbaydas.online-0f2027?style=for-the-badge&logo=readdotcv&logoColor=4FC3F7" alt="Blog" /></a>
-  <a href="https://onurbaydas.online/index.xml"><img src="https://img.shields.io/badge/RSS-Abone%20ol-2c5364?style=for-the-badge&logo=rss&logoColor=FFA500" alt="RSS" /></a>
+  <img src="https://komarev.com/ghpvc/?username=onurbaydas&style=for-the-badge&color=203a43&label=Profil+G%C3%B6r%C3%BCnt%C3%BClenme" alt="Profile views" />
 </p>
 
 ---
@@ -109,5 +109,5 @@ onur:
 
 <!-- Footer -->
 <p align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:2c5364,50:203a43,100:0f2027&height=120&section=footer" width="100%" />
+  <img src="assets/footer.svg" alt="" width="100%" />
 </p>
