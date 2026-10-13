@@ -19,15 +19,25 @@
 
 ## 👋 Merhaba
 
-Türkiye'de çalışan bir **sistem ve altyapı mühendisiyim**. 2024'ten bu yana on-prem altyapı tasarlıyor, işletiyor ve sorun gideriyorum: yönetilen bir bulut servisine yaslanamadığınız, depolamadan iş zamanlamaya kadar **her katmanın sizin sorumluluğunuzda olduğu** ortamlar.
+Türkiye'de çalışan bir **sistem ve altyapı mühendisiyim**. 2024'ten bu yana bir sistem entegratöründe on-prem altyapı tasarlıyor, kuruyor, işletiyor ve sorun gideriyorum: yönetilen bir bulut servisine yaslanamadığınız, donanımdan depolamaya, kimlikten iş zamanlamaya kadar **her katmanın sizin sorumluluğunuzda olduğu** ortamlar.
+
+Kurumsal müşteriler, araştırma laboratuvarları ve yapay zekâ iş yükleri için çok kullanıcılı GPU platformları, hyperconverged cluster'lar, yedekleme ve izleme altyapıları üzerinde çalışıyorum. Bilgisayar mühendisliği eğitimimi tamamlamak üzereyim.
 
 ```yaml
 onur:
-  rol: Sistem & Altyapı Mühendisi
+  rol: Systems & Infrastructure Engineer
+  deneyim: 2024'ten beri on-prem altyapı (design · deployment · operations)
   konum: Türkiye 🇹🇷
-  odak: [on-prem, virtualization, gpu-infrastructure, container-security]
-  felsefe: "Doküman söylemiyorsa, kaynak kod söyler."
-  şu_an: Multi-tenant Linux sistemlerinde isolation ve access control
+  eğitim: Bilgisayar Mühendisliği (mezuniyete yakın)
+  odak: [on-prem, virtualization, gpu-infrastructure, hpc, container-security, observability]
+  şu_an:
+    - Multi-tenant GPU cloud tasarımı: Kubernetes-native HPC scheduling + fractional GPU sharing
+    - GPU destekli VDI: virtual GPU ile passthrough'suz paylaşımlı sanal masaüstü (POC)
+    - Backup monitoring ürünü: virtual appliance dağıtımı, imzalı lisanslama, gerçek ortam testleri
+    - Teknik yazarlık: canlı ortam olaylarından Türkçe/İngilizce makaleler
+  öğreniyor: [Kubernetes, GPU software stack, cloud architecture]
+  hedef: AI Infrastructure · GPU Operations · HPC
+  ilgi: [agentic AI workflows, local LLMs, transformers from scratch, offensive security]
 ```
 
 ## 🛠️ Neler Üzerinde Çalışıyorum
@@ -35,10 +45,86 @@ onur:
 | Alan | Detay |
 | :--- | :--- |
 | 🖥️ **Virtualization & Storage** | Cluster tabanlı virtualization, software-defined storage, hyperconverged infrastructure (HCI), enterprise NAS ve ZFS tabanlı depolama |
-| 🎮 **GPU Altyapısı** | Yapay zekâ ve araştırma iş yükleri için GPU sunucuları, GPU partitioning ve virtual GPU, HPC job scheduling |
-| 👥 **Çok Kullanıcılı Platformlar** | Paylaşımlı Linux sistemleri: kullanıcı izolasyonu, container erişim kontrolü, günlük operasyon |
-| 🔐 **Container Güvenliği** | Paylaşımlı makinelerde container runtime'ı kısıtlamak, policy-as-code ile authorization |
-| 🪪 **Kimlik & Operasyon** | Directory services ve identity management, Kerberos ile kimlik doğrulama, network home directories, merkezi loglama, yedekleme izleme |
+| 🎮 **GPU Altyapısı** | Yapay zekâ ve araştırma iş yükleri için GPU sunucuları ve cluster'ları, GPU partitioning ve virtual GPU, HPC job scheduling, stres testi ve driver/framework uyumluluğu |
+| 👥 **Çok Kullanıcılı Platformlar** | Paylaşımlı Linux iş istasyonları: kullanıcı izolasyonu, rezervasyon ve kaynak yönetimi, container erişim kontrolü, günlük operasyon |
+| 🔐 **Container Güvenliği** | Paylaşımlı makinelerde container runtime'ı kısıtlamak, policy-as-code ile authorization, cross-user izolasyon açıkları |
+| 🪪 **Kimlik & Erişim** | Directory services ve identity management, Kerberos ile kimlik doğrulama, network home directories, PAM entegrasyonu |
+| 💾 **Backup & DR** | Hyperconverged backup, deduplication backup appliance'ları, yedekleme izleme ve raporlama |
+| ♻️ **High Availability** | Cluster resource management, block-level replication, active/passive servis failover |
+| 📈 **Observability** | Metrics, centralized logging, alerting ve dashboard'lar; merkezi syslog toplama |
+| 🔧 **Donanım & Yaşam Döngüsü** | Rack sunucu kurulumu, out-of-band management (BMC), RAID controller ve disk arızası analizi, vendor support süreçleri |
+| 🌐 **Network & Security** | Next-generation firewall yönetimi, segmentasyon, yönetim ağı tasarımı |
+
+## 🚀 Öne Çıkan Çalışmalar
+
+<details open>
+<summary><b>🧪 Çok kullanıcılı GPU iş istasyonu platformu</b></summary>
+
+<br/>
+
+Bir araştırma laboratuvarındaki **20 GPU'lu Linux iş istasyonu** için uçtan uca rezervasyon ve yönetim platformu tasarlayıp işlettim, ardından devrettim.
+
+- **Uygulama:** REST API backend, relational database, modern web frontend
+- **Kimlik:** Directory service + Kerberos, ağ üzerinden ev dizinleri, PAM tabanlı oturum kontrolü
+- **Container:** Private container registry, kullanıcının kendi UID'siyle çalışan container'lar, erişim policy'leri
+- **Operasyon:** Configuration management ile toplu kurulum, metrics ve dashboard'lar
+- **Dokümantasyon:** Kapsamlı sistem dokümanı ve 39 maddelik *known issues* envanteri (izolasyon, kimlik doğrulama, veri kalıcılığı)
+
+</details>
+
+<details>
+<summary><b>💾 Backup monitoring ürünü</b></summary>
+
+<br/>
+
+Hyperconverged platformlar ve backup appliance'lar için yedekleme izleme ürünü.
+
+- Dış bağımlılık olmadan, yalnızca standart kütüphaneyle Python
+- Virtual appliance ve paket olarak dağıtım, imzalı yıllık lisans
+- Kurumsal müşteride canlı kullanımda, 2.x sürüm serisinde aktif geliştirme
+
+</details>
+
+<details>
+<summary><b>☁️ Multi-tenant GPU cloud tasarımı</b></summary>
+
+<br/>
+
+Yeni nesil GPU sunucuları için, kullanıcıların on-demand GPU ortamı açabildiği **otomatik ve çok kullanıcılı** bir platform mimarisi: Kubernetes üzerinde HPC scheduling, fractional GPU sharing ve kaynak kotaları.
+</details>
+
+<details>
+<summary><b>🖥️ GPU destekli VDI laboratuvarı</b></summary>
+
+<br/>
+
+20 istemcilik bir eğitim laboratuvarı için virtual GPU tabanlı sanal masaüstü altyapısı. GPU passthrough olmadan paylaşımlı GPU kullanımı, proof-of-concept aşamasında.
+</details>
+
+<details>
+<summary><b>🔬 Araştırma projeleri</b></summary>
+
+<br/>
+
+- **P2P şifreli mesajlaşma:** Post-quantum key exchange ve Double Ratchet tabanlı uçtan uca şifreleme, merkeziyetsiz ağ katmanı (Rust)
+- **Out-of-band management cockpit:** Farklı üreticilerin BMC konsollarını tek arayüzde toplayan masaüstü uygulaması (prototip)
+
+</details>
+
+## 🧯 Sahadan Notlar
+
+Canlı ortamda çözdüğüm problemlerden bazıları:
+
+- 🔁 **HA mail altyapısı:** 3 node'lu HCI cluster üzerinde cluster resource manager + block-level replication ile active/passive failover, fencing kısıtı olan ortamda tasarım
+- 💥 **Host çökmesi analizi:** Hyperconverged node'da RAID controller kaynaklı PCIe hatalarının log analizi ve vendor support case hazırlığı
+- 🧩 **Appliance taşıma:** Vendor backup appliance'ını farklı bir hypervisor'a kurmak (UEFI firmware, legacy boot disk, CPU model ayarları)
+- 🪵 **Sessiz log kaybı:** Merkezi syslog kurulumunda eski forwarding sözdiziminin yeni dağıtımlarda hata vermeden çalışmaması
+- 🛟 **Firmware kurtarma:** Açılmayan sunucuyu BMC flash recovery ile geri getirme
+- 🗄️ **Backup appliance arızası:** Disk arızası, RAID6 reconstruction ve bellek yerleşimi analizi
+- 🔒 **Hypervisor sorunları:** Sanal disk kilitleri ve takılan yedekleme kuyrukları
+- 🔥 **Yeni nesil GPU doğrulama:** Stres testi script'i ve driver/ML framework uyumluluğu
+- 📊 **Monitoring stack:** Metrics, logs, alerting ve reverse proxy ile uçtan uca izleme
+- ✉️ **Migration planlama:** Hosted e-posta servisinden cloud productivity suite'e geçiş planı
 
 ## 🧰 Uzmanlık Alanları
 
@@ -47,17 +133,28 @@ onur:
   <img src="https://img.shields.io/badge/Software--Defined%20Storage-203a43?style=for-the-badge" />
   <img src="https://img.shields.io/badge/HCI-2c5364?style=for-the-badge" />
   <img src="https://img.shields.io/badge/ZFS%20Storage-0f2027?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/High%20Availability-203a43?style=for-the-badge" />
   <br/>
-  <img src="https://img.shields.io/badge/GPU%20Computing-203a43?style=for-the-badge" />
-  <img src="https://img.shields.io/badge/HPC%20Scheduling-2c5364?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/GPU%20Computing-2c5364?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/GPU%20Partitioning-0f2027?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/HPC%20Scheduling-203a43?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/VDI-2c5364?style=for-the-badge" />
+  <br/>
   <img src="https://img.shields.io/badge/Containerization-0f2027?style=for-the-badge" />
-  <img src="https://img.shields.io/badge/Policy--as--Code-203a43?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/Kubernetes-203a43?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/Policy--as--Code-2c5364?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/Configuration%20Management-0f2027?style=for-the-badge" />
   <br/>
-  <img src="https://img.shields.io/badge/Linux%20Administration-2c5364?style=for-the-badge" />
-  <img src="https://img.shields.io/badge/Identity%20%26%20Access%20Mgmt-0f2027?style=for-the-badge" />
-  <img src="https://img.shields.io/badge/Observability-203a43?style=for-the-badge" />
-  <img src="https://img.shields.io/badge/Backup%20%26%20DR-2c5364?style=for-the-badge" />
-  <img src="https://img.shields.io/badge/Shell%20Scripting-0f2027?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/Linux%20Administration-203a43?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/Identity%20%26%20Access%20Mgmt-2c5364?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/Network%20Security-0f2027?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/Backup%20%26%20DR-203a43?style=for-the-badge" />
+  <br/>
+  <img src="https://img.shields.io/badge/Observability-2c5364?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/Server%20Hardware-0f2027?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/Python-203a43?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/Bash-2c5364?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/Technical%20Writing-0f2027?style=for-the-badge" />
 </p>
 
 ## ✍️ Son Blog Yazılarım
