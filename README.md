@@ -12,32 +12,27 @@
 <p align="center">
   <a href="https://onurbaydas.online"><img src="https://img.shields.io/badge/Blog-onurbaydas.online-0f2027?style=for-the-badge&logo=readdotcv&logoColor=4FC3F7" alt="Blog" /></a>
   <a href="https://onurbaydas.online/index.xml"><img src="https://img.shields.io/badge/RSS-Abone%20ol-2c5364?style=for-the-badge&logo=rss&logoColor=FFA500" alt="RSS" /></a>
-  <img src="https://komarev.com/ghpvc/?username=onurbaydas&style=for-the-badge&color=203a43&label=Profil+G%C3%B6r%C3%BCnt%C3%BClenme" alt="Profile views" />
 </p>
 
 ---
 
-## 👋 Merhaba
+## Hakkımda
 
 Türkiye'de çalışan bir **sistem ve altyapı mühendisiyim**. 2024'ten bu yana on-prem altyapı tasarlıyor, kuruyor, işletiyor ve sorun gideriyorum: yönetilen bir bulut servisine yaslanamadığınız, donanımdan depolamaya, kimlikten iş zamanlamaya kadar **her katmanın sizin sorumluluğunuzda olduğu** ortamlar.
 
-Virtualization, storage, GPU altyapısı, yedekleme ve izleme konularında çalışıyorum. Bilgisayar mühendisliği eğitimimi tamamlamak üzereyim.
+Virtualization, storage, GPU altyapısı, yedekleme ve izleme konularında çalışıyorum.
 
 ```yaml
 onur:
   rol: Systems & Infrastructure Engineer
   deneyim: 2024'ten beri on-prem altyapı (design · deployment · operations)
-  konum: Türkiye 🇹🇷
-  eğitim: Bilgisayar Mühendisliği (mezuniyete yakın)
+  konum: Türkiye
   odak: [on-prem, virtualization, gpu-infrastructure, hpc, container-security, observability]
   şu_an:
     - Çok kullanıcılı GPU altyapısında scheduling, partitioning ve izolasyon
     - Virtualization ve software-defined storage cluster'larının işletimi
     - Backup, monitoring ve high availability
     - Canlı ortam deneyimlerinden Türkçe/İngilizce teknik yazılar
-  öğreniyor: [Kubernetes, GPU software stack, cloud architecture]
-  hedef: AI Infrastructure · GPU Operations · HPC
-  ilgi: [agentic AI workflows, local LLMs, transformers from scratch, offensive security]
 ```
 
 ## 🛠️ Neler Üzerinde Çalışıyorum
