@@ -65,7 +65,7 @@ onur:
 > Canlı ortamda gerçekten karşılaştığım sorunları yazıyorum: sessiz hatalar, yanıltıcı dokümantasyon ve dokümanın söylemediğini kaynak kodun nasıl söylediği.
 
 <!-- BLOG-POST-LIST:START -->
-- [Bir Kullanıcı, İki UID: Domain'e Bağlı TrueNAS'ta NFSv4, Kerberos ve Docker](https://onurbaydas.online/posts/nfs-uid-mismatch/)
+- [Bir Kullanıcı, İki UID: Domain&#39;e Bağlı TrueNAS&#39;ta NFSv4, Kerberos ve Docker](https://onurbaydas.online/posts/nfs-uid-mismatch/)
 - [OPA ile Docker Authorization: Sessiz Fail-Open ve Canlı Ortamdan Dersler](https://onurbaydas.online/posts/docker-authz-opa/)
 <!-- BLOG-POST-LIST:END -->
 
