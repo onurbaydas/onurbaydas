@@ -86,6 +86,7 @@ onur:
 > Canlı ortamda gerçekten karşılaştığım sorunları yazıyorum: sessiz hatalar, yanıltıcı dokümantasyon ve dokümanın söylemediğini kaynak kodun nasıl söylediği.
 
 <!-- BLOG-POST-LIST:START -->
+- [Sistem ve Güvenlik Radarı: 14 Ekim 2026](https://onurbaydas.online/posts/radar/2026-10-14-sistem-ve-guvenlik-radari/)
 - [Bir Kullanıcı, İki UID: Domain&#39;e Bağlı TrueNAS&#39;ta NFSv4, Kerberos ve Docker](https://onurbaydas.online/posts/nfs-uid-mismatch/)
 - [OPA ile Docker Authorization: Sessiz Fail-Open ve Canlı Ortamdan Dersler](https://onurbaydas.online/posts/docker-authz-opa/)
 <!-- BLOG-POST-LIST:END -->
