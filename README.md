@@ -4,13 +4,13 @@
 </p>
 
 <p align="center">
-  <a href="https://onurbaydas.online">
+  <a href="https://onurbaydas.com">
     <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=500&size=20&duration=3500&pause=900&color=4FC3F7&center=true&vCenter=true&width=640&lines=On-prem+infrastructure+%C2%B7+design+%26+operations;Virtualization+%C2%B7+Software-Defined+Storage+%C2%B7+HCI;GPU+Partitioning+%C2%B7+HPC+Job+Scheduling;Container+Security+%C2%B7+Policy-as-Code;Ger%C3%A7ek+olaylardan+teknik+yaz%C4%B1lar" alt="Typing SVG" />
   </a>
 </p>
 
 <p align="center">
-  <a href="https://onurbaydas.online"><img src="https://img.shields.io/badge/Blog-onurbaydas.online-0f2027?style=for-the-badge&logo=readdotcv&logoColor=4FC3F7" alt="Blog" /></a>
+  <a href="https://onurbaydas.com"><img src="https://img.shields.io/badge/Blog-onurbaydas.com-0f2027?style=for-the-badge&logo=readdotcv&logoColor=4FC3F7" alt="Blog" /></a>
   <img src="https://komarev.com/ghpvc/?username=onurbaydas&style=for-the-badge&color=203a43&label=Profil+G%C3%B6r%C3%BCnt%C3%BClenme" alt="Profile views" />
 </p>
 
@@ -86,12 +86,11 @@ onur:
 > Canlı ortamda gerçekten karşılaştığım sorunları yazıyorum: sessiz hatalar, yanıltıcı dokümantasyon ve dokümanın söylemediğini kaynak kodun nasıl söylediği.
 
 <!-- BLOG-POST-LIST:START -->
-- [Sistem ve Güvenlik Radarı: 14 Ekim 2026](https://onurbaydas.online/posts/radar/2026-10-14-sistem-ve-guvenlik-radari/)
-- [Bir Kullanıcı, İki UID: Domain&#39;e Bağlı TrueNAS&#39;ta NFSv4, Kerberos ve Docker](https://onurbaydas.online/posts/nfs-uid-mismatch/)
-- [OPA ile Docker Authorization: Sessiz Fail-Open ve Canlı Ortamdan Dersler](https://onurbaydas.online/posts/docker-authz-opa/)
+- [Bir Kullanıcı, İki UID: Domain&#39;e Bağlı TrueNAS&#39;ta NFSv4, Kerberos ve Docker](https://onurbaydas.com/posts/nfs-uid-mismatch/)
+- [OPA ile Docker Authorization: Sessiz Fail-Open ve Canlı Ortamdan Dersler](https://onurbaydas.com/posts/docker-authz-opa/)
 <!-- BLOG-POST-LIST:END -->
 
-<p align="right"><a href="https://onurbaydas.online">Tüm yazılar →</a></p>
+<p align="right"><a href="https://onurbaydas.com">Tüm yazılar →</a></p>
 
 ## 📊 GitHub İstatistikleri
 
